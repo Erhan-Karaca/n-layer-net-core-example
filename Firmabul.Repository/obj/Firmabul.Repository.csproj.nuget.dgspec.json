@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/Firmabul.Repository.csproj": {}
+  },
+  "projects": {
+    "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Core/Firmabul.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Core/Firmabul.Core.csproj",
+        "projectName": "Firmabul.Core",
+        "projectPath": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Core/Firmabul.Core.csproj",
+        "packagesPath": "/Users/erhankaraca/.nuget/packages/",
+        "outputPath": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/erhankaraca/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/Firmabul.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/Firmabul.Repository.csproj",
+        "projectName": "Firmabul.Repository",
+        "projectPath": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/Firmabul.Repository.csproj",
+        "packagesPath": "/Users/erhankaraca/.nuget/packages/",
+        "outputPath": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/erhankaraca/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Core/Firmabul.Core.csproj": {
+                "projectPath": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Core/Firmabul.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

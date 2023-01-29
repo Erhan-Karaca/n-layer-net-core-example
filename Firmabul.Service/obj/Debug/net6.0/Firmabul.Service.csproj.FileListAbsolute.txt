@@ -1,0 +1,17 @@
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/bin/Debug/net6.0/Firmabul.Service.deps.json
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/bin/Debug/net6.0/Firmabul.Service.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/bin/Debug/net6.0/Firmabul.Service.pdb
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/bin/Debug/net6.0/Firmabul.Core.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/bin/Debug/net6.0/Firmabul.Repository.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/bin/Debug/net6.0/Firmabul.Repository.pdb
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/bin/Debug/net6.0/Firmabul.Core.pdb
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.csproj.AssemblyReference.cache
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.AssemblyInfoInputs.cache
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.AssemblyInfo.cs
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.csproj.CoreCompileInputs.cache
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.csproj.CopyComplete
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/refint/Firmabul.Service.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/Firmabul.Service.pdb
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/obj/Debug/net6.0/ref/Firmabul.Service.dll

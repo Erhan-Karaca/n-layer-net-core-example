@@ -1,0 +1,17 @@
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/bin/Debug/net6.0/Firmabul.Repository.deps.json
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/bin/Debug/net6.0/Firmabul.Repository.runtimeconfig.json
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/bin/Debug/net6.0/Firmabul.Repository.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/bin/Debug/net6.0/Firmabul.Repository.pdb
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/bin/Debug/net6.0/Firmabul.Core.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/bin/Debug/net6.0/Firmabul.Core.pdb
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.csproj.AssemblyReference.cache
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.AssemblyInfoInputs.cache
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.AssemblyInfo.cs
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.csproj.CoreCompileInputs.cache
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.csproj.CopyComplete
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/refint/Firmabul.Repository.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.pdb
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/Firmabul.Repository.genruntimeconfig.cache
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Repository/obj/Debug/net6.0/ref/Firmabul.Repository.dll
