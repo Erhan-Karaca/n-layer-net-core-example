@@ -269,8 +269,22 @@ namespace Firmabul.Repository.Migrations
                 columns: new[] { "Id", "CreatedDate", "Description", "Name", "Status", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 1, 29, 18, 36, 27, 27, DateTimeKind.Local).AddTicks(9720), null, "Bilişim", false, null },
-                    { 2, new DateTime(2023, 1, 29, 18, 36, 27, 27, DateTimeKind.Local).AddTicks(9750), null, "Güvenlik", false, null }
+                    { 1, new DateTime(2023, 2, 3, 0, 10, 17, 258, DateTimeKind.Local).AddTicks(1310), null, "Bilişim", false, null },
+                    { 2, new DateTime(2023, 2, 3, 0, 10, 17, 258, DateTimeKind.Local).AddTicks(1330), null, "Güvenlik", false, null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "CreatedDate", "Email", "FirstName", "GoogleId", "Image", "LastLogin", "LastName", "Password", "Status", "UpdatedDate", "Verified" },
+                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "erhankaraca@outlook.com.tr", "Erhan", null, null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Karaca", null, false, null, false });
+
+            migrationBuilder.InsertData(
+                table: "Companies",
+                columns: new[] { "Id", "Cover", "CreatedDate", "Description", "Logo", "MetaDescription", "MetaTitle", "Name", "Rate", "SectorId", "Slug", "SortDescription", "Status", "TotalRateCount", "UpdatedDate", "UserId", "WorkDay", "WorkTime" },
+                values: new object[,]
+                {
+                    { 1, null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "E-ticaret", null, null, null, "Evishe", 0f, 1, null, null, false, 0, null, 1, null, null },
+                    { 2, null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Hizmet", null, null, null, "Karaca Mobilya", 0f, 2, null, null, false, 0, null, 1, null, null }
                 });
 
             migrationBuilder.CreateIndex(

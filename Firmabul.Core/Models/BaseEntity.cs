@@ -1,4 +1,4 @@
-namespace Firmabul.Core;
+namespace Firmabul.Core.Models;
 
 public abstract class BaseEntity
 {

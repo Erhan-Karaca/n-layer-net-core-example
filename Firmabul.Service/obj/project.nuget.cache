@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "pCGl6z+0M7avx06Hk1apMy9I7R4nqBiy6Mxqyzll6M9oMeAjUaE0AmB8EoHK3qk7Nil973hl9WSOGd3tfnel2w==",
+  "dgSpecHash": "Xbb/qiI6I89/YMRuutZo70YPvnuGkBkwmskI2O9H9UnKQ7KEiMcPoJ9F4zid9i8oELowhs9JPvlEYKDn7cfwgg==",
   "success": true,
   "projectFilePath": "/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.Service/Firmabul.Service.csproj",
   "expectedPackageFiles": [
+    "/Users/erhankaraca/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/erhankaraca/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/Users/erhankaraca/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/erhankaraca/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/erhankaraca/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/Users/erhankaraca/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/erhankaraca/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/erhankaraca/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "/Users/erhankaraca/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.0.1/microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "/Users/erhankaraca/.nuget/packages/microsoft.entityframeworkcore/7.0.2/microsoft.entityframeworkcore.7.0.2.nupkg.sha512",

@@ -91,3 +91,5 @@
 /Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/obj/Debug/net6.0/Firmabul.API.pdb
 /Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/obj/Debug/net6.0/Firmabul.API.genruntimeconfig.cache
 /Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/obj/Debug/net6.0/ref/Firmabul.API.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/AutoMapper.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

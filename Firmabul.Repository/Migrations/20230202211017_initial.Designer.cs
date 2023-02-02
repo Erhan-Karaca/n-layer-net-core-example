@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Firmabul.Repository.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230129153627_initial")]
+    [Migration("20230202211017_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace Firmabul.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Firmabul.Core.Address", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Address", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -100,7 +100,7 @@ namespace Firmabul.Repository.Migrations
                     b.ToTable("Addresses");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.City", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.City", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -133,7 +133,7 @@ namespace Firmabul.Repository.Migrations
                     b.ToTable("Cities");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Comment", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Comment", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -174,7 +174,7 @@ namespace Firmabul.Repository.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Company", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Company", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -240,9 +240,35 @@ namespace Firmabul.Repository.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Companies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "E-ticaret",
+                            Name = "Evishe",
+                            Rate = 0f,
+                            SectorId = 1,
+                            Status = false,
+                            TotalRateCount = 0,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Hizmet",
+                            Name = "Karaca Mobilya",
+                            Rate = 0f,
+                            SectorId = 2,
+                            Status = false,
+                            TotalRateCount = 0,
+                            UserId = 1
+                        });
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Country", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Country", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -270,7 +296,7 @@ namespace Firmabul.Repository.Migrations
                     b.ToTable("Countries");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Gallery", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Gallery", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -303,7 +329,7 @@ namespace Firmabul.Repository.Migrations
                     b.ToTable("Galleries");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Sector", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Sector", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -336,20 +362,20 @@ namespace Firmabul.Repository.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 1, 29, 18, 36, 27, 27, DateTimeKind.Local).AddTicks(9720),
+                            CreatedDate = new DateTime(2023, 2, 3, 0, 10, 17, 258, DateTimeKind.Local).AddTicks(1310),
                             Name = "Bilişim",
                             Status = false
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 1, 29, 18, 36, 27, 27, DateTimeKind.Local).AddTicks(9750),
+                            CreatedDate = new DateTime(2023, 2, 3, 0, 10, 17, 258, DateTimeKind.Local).AddTicks(1330),
                             Name = "Güvenlik",
                             Status = false
                         });
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Town", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Town", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -382,7 +408,7 @@ namespace Firmabul.Repository.Migrations
                     b.ToTable("Towns");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.User", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -426,29 +452,42 @@ namespace Firmabul.Repository.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "erhankaraca@outlook.com.tr",
+                            FirstName = "Erhan",
+                            LastLogin = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastName = "Karaca",
+                            Status = false,
+                            Verified = false
+                        });
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Address", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Address", b =>
                 {
-                    b.HasOne("Firmabul.Core.City", "City")
+                    b.HasOne("Firmabul.Core.Models.City", "City")
                         .WithMany("Addresses")
                         .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("Firmabul.Core.Company", "Company")
+                    b.HasOne("Firmabul.Core.Models.Company", "Company")
                         .WithMany("Addresses")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Firmabul.Core.Country", "Country")
+                    b.HasOne("Firmabul.Core.Models.Country", "Country")
                         .WithMany("Addresses")
                         .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("Firmabul.Core.Town", "Town")
+                    b.HasOne("Firmabul.Core.Models.Town", "Town")
                         .WithMany("Addresses")
                         .HasForeignKey("TownId")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -463,9 +502,9 @@ namespace Firmabul.Repository.Migrations
                     b.Navigation("Town");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.City", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.City", b =>
                 {
-                    b.HasOne("Firmabul.Core.Country", "Country")
+                    b.HasOne("Firmabul.Core.Models.Country", "Country")
                         .WithMany("Cities")
                         .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -474,15 +513,15 @@ namespace Firmabul.Repository.Migrations
                     b.Navigation("Country");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Comment", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Comment", b =>
                 {
-                    b.HasOne("Firmabul.Core.Company", "Company")
+                    b.HasOne("Firmabul.Core.Models.Company", "Company")
                         .WithMany("Comments")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("Firmabul.Core.User", "User")
+                    b.HasOne("Firmabul.Core.Models.User", "User")
                         .WithMany("Comments")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -493,15 +532,15 @@ namespace Firmabul.Repository.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Company", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Company", b =>
                 {
-                    b.HasOne("Firmabul.Core.Sector", "Sector")
+                    b.HasOne("Firmabul.Core.Models.Sector", "Sector")
                         .WithMany("Companies")
                         .HasForeignKey("SectorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Firmabul.Core.User", "User")
+                    b.HasOne("Firmabul.Core.Models.User", "User")
                         .WithMany("Companies")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -512,9 +551,9 @@ namespace Firmabul.Repository.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Gallery", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Gallery", b =>
                 {
-                    b.HasOne("Firmabul.Core.Company", "Company")
+                    b.HasOne("Firmabul.Core.Models.Company", "Company")
                         .WithMany("Galleries")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -523,9 +562,9 @@ namespace Firmabul.Repository.Migrations
                     b.Navigation("Company");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Town", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Town", b =>
                 {
-                    b.HasOne("Firmabul.Core.City", "City")
+                    b.HasOne("Firmabul.Core.Models.City", "City")
                         .WithMany("Towns")
                         .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -534,14 +573,14 @@ namespace Firmabul.Repository.Migrations
                     b.Navigation("City");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.City", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.City", b =>
                 {
                     b.Navigation("Addresses");
 
                     b.Navigation("Towns");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Company", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Company", b =>
                 {
                     b.Navigation("Addresses");
 
@@ -550,24 +589,24 @@ namespace Firmabul.Repository.Migrations
                     b.Navigation("Galleries");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Country", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Country", b =>
                 {
                     b.Navigation("Addresses");
 
                     b.Navigation("Cities");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Sector", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Sector", b =>
                 {
                     b.Navigation("Companies");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.Town", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.Town", b =>
                 {
                     b.Navigation("Addresses");
                 });
 
-            modelBuilder.Entity("Firmabul.Core.User", b =>
+            modelBuilder.Entity("Firmabul.Core.Models.User", b =>
                 {
                     b.Navigation("Comments");
 

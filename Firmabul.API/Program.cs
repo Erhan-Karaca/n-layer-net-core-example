@@ -1,9 +1,12 @@
 using System.Reflection;
 using Firmabul.Core.Repositories;
+using Firmabul.Core.Services;
 using Firmabul.Core.UnitOfWorks;
 using Firmabul.Repository;
 using Firmabul.Repository.Repositories;
 using Firmabul.Repository.UnitOfWorks;
+using Firmabul.Service.Mapping;
+using Firmabul.Service.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +20,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-//builder.Services.AddScoped(typeof(IService), typeof(Service));
+builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
+builder.Services.AddAutoMapper(typeof(MapProfile));
+
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
 
 builder.Services.AddDbContext<AppDbContext>(x =>
 {

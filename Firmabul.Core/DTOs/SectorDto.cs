@@ -1,9 +1,8 @@
-namespace Firmabul.Core;
+namespace Firmabul.Core.DTOs;
 
-public class Sector: BaseEntity
-{ 
+public class SectorDto : BaseDto
+{
     public string Name { get; set; }
     public string Description { get; set; }
     public bool Status { get; set; }
-    public ICollection<Company> Companies { get; set; }
 }

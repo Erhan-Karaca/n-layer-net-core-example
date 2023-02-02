@@ -1,5 +1,5 @@
 using System.Reflection;
-using Firmabul.Core;
+using Firmabul.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Firmabul.Repository;
