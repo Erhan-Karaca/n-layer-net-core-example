@@ -12,5 +12,6 @@ public class MapProfile : Profile
         CreateMap<Sector, SectorDto>().ReverseMap();
         CreateMap<CompanyUpdateDto, Company>();
         CreateMap<Company, CompanyWithSectorDto>();
+        CreateMap<Sector, SectorWithCompaniesDto>();
     }
 }

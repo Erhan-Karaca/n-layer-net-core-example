@@ -2,6 +2,7 @@ using System.Linq.Expressions;
 using Firmabul.Core.Repositories;
 using Firmabul.Core.Services;
 using Firmabul.Core.UnitOfWorks;
+using Firmabul.Service.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Firmabul.Service.Services;
@@ -19,7 +20,12 @@ public class Service<T> : IService<T> where T : class
 
     public async Task<T> GetByIdAsync(int id)
     {
-        return await _repository.GetByIdAsync(id);
+        var hasItem = await _repository.GetByIdAsync(id);
+        if (hasItem == null)
+        {
+            throw new NotFoundException($"{typeof(T).Name}({id}) not found");
+        }
+        return hasItem;
     }
 
     public async Task<IEnumerable<T>> GetAllAsync()

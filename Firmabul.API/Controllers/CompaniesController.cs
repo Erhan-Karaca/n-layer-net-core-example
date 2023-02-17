@@ -1,4 +1,5 @@
 using AutoMapper;
+using Firmabul.API.Filters;
 using Firmabul.Core.DTOs;
 using Firmabul.Core.Models;
 using Firmabul.Core.Services;
@@ -7,19 +8,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Firmabul.API.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
 public class CompaniesController : CustomBaseController
 {
     private readonly IMapper _mapper;
-    private readonly IService<Company> _service;
-    private readonly ICompanyService _companyService;
+    private readonly ICompanyService _service;
 
-    public CompaniesController(IMapper mapper, IService<Company> service, ICompanyService companyService)
+    public CompaniesController(IMapper mapper, ICompanyService service)
     {
         _mapper = mapper;
         _service = service;
-        _companyService = companyService;
     }
     
     /// <summary>
@@ -29,7 +26,7 @@ public class CompaniesController : CustomBaseController
     [HttpGet("[action]")]
     public async Task<IActionResult> GetCompaniesWithSector()
     {
-        return CreateActionResult(await _companyService.GetCompaniesWithSector());
+        return CreateActionResult(await _service.GetCompaniesWithSector());
     }
 
     /// <summary>
@@ -48,6 +45,7 @@ public class CompaniesController : CustomBaseController
     ///  GET api/companies/5
     /// </summary>
     /// <returns></returns>
+    [ServiceFilter(typeof(NotFoundFilter<Company>))]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {

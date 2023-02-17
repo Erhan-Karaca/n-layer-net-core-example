@@ -93,3 +93,10 @@
 /Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/obj/Debug/net6.0/ref/Firmabul.API.dll
 /Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/AutoMapper.dll
 /Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/FluentValidation.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/Autofac.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/Autofac.Extensions.DependencyInjection.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/Firmabul.Caching.dll
+/Users/erhankaraca/Sites/myserver/firmabul.com/Firmabul/Firmabul.API/bin/Debug/net6.0/Firmabul.Caching.pdb

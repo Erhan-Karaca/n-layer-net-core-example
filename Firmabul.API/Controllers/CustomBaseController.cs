@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Firmabul.API.Controllers;
 
+[ApiController]
+[Route("api/[controller]")]
 public class CustomBaseController : ControllerBase
 {
     [NonAction]
